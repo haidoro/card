@@ -20,6 +20,7 @@
 			position: absolute;
         	top: 0;
         	left: 0;
+        	backface-visibility: hidden;
 		}
 		.back{
 			background-color: blue;
@@ -30,6 +31,7 @@
 			position: absolute;
         	top: 0;
         	left: 0;
+        	backface-visibility: hidden;
 		}
 		.card:hover .front{
 			transform:rotateY(180deg);
@@ -37,7 +39,6 @@
 		.card:hover .back{
 			transform:rotateY(0);
 		}
-
 
 	</style>
 </head>
