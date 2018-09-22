@@ -12,7 +12,8 @@
 			position: relative;
 			
 		}
-		.front{
+		.front,
+		.back{
 			background-color: red;
 			height:100%;
 			width:100%;
@@ -24,17 +25,10 @@
 		}
 		.back{
 			background-color: blue;
-			height:100%;
-			width:100%;
 			transform:rotateY(180deg);
-			transition:.8s;
-			position: absolute;
-        	top: 0;
-        	left: 0;
-        	backface-visibility: hidden;
 		}
 		.card:hover .front{
-			transform:rotateY(180deg);
+			transform:rotateY(-180deg);
 		}
 		.card:hover .back{
 			transform:rotateY(0);
